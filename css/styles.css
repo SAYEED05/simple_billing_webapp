@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Rose', cursive;
+    font-weight: 400;
+
+}
+
+#billtable .glyphicon-pencil {
+
+    display: none;
+}
+
+#billtable .tabledit-edit-button {
+
+    display: none;
+}
+
+#total {
+    display:none;
+}
+
+.prodadd{
+    width: 100%;
+    height: inherit;
+}
+
+.container {
+    text-align: center;
+    
+}
+
+.container h2{
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    display: block;
+}
