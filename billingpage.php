@@ -13,10 +13,10 @@ $result = mysqli_query($mysqli, $sql);
         <table id="billdet" class="table table-bordered table-striped">
             <thead class="thead-dark">
                 <tr>
-                    <th>prod name</th>
-                    <th>price</th>
-                    <th>qty</th>
-                    <th>action</th>
+                    <th>PRODUCT NAME</th>
+                    <th>PRICE</th>
+                    <th>QTY</th>
+                    <th>ACTION</th>
                     <!-- <th></th> -->
                 </tr>
             </thead>
@@ -58,7 +58,7 @@ $result = mysqli_query($mysqli, $sql);
             <tr>
                 <th>S.NO</th>
                 <!-- <th>PROD_ID</th> -->
-                <th>PROD_NAME</th>
+                <th>PRODUCT NAME</th>
                 <th>PRICE</th>
                 <th>QTY</th>
                 <th>TOTAL</th>
