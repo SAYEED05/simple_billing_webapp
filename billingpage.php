@@ -76,7 +76,7 @@ $result = mysqli_query($mysqli, $sql);
             $qty = $_POST['qty'];
             $total = $_POST['price'] * $_POST['qty'];
 
-            $billDet = mysqli_query($mysqli, "INSERT into bill_info values('','','','$prod_name','$price','$qty','$total')");
+            $billDet = mysqli_query($mysqli, "INSERT into bill_info values(0,0,0,'$prod_name','$price','$qty','$total')");
             if ($billDet) {
                 exit(header("Location:billingpage.php"));
                 echo "success";
