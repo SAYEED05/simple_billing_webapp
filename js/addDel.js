@@ -30,3 +30,6 @@ function insRow() {
     // append the new row to the table
     x.appendChild(new_row);
 }
+
+
+

@@ -17,6 +17,7 @@
     display: none;
 }
 
+
 #total {
     display:none;
 }
@@ -35,4 +36,18 @@
     border-bottom: 1px solid black;
     font-weight: bold;
     display: block;
+}
+
+.cust_id {
+    display: none;
+}
+
+#custdet .glyphicon-pencil {
+
+    display: none;
+}
+
+#custdet .tabledit-edit-button {
+
+    display: none;
 }

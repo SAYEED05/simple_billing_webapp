@@ -4,7 +4,7 @@
 
 <script src="" async defer></script>
 <script type="text/javascript" src="js\getprice.js"></script>
-<script type="text/javascript" src="js\product_ed_function.js"></script>
+<script type="text/javascript" src="js\edit_and_delete.js"></script>
 <script src="js\jqueryTableEdit\jquery.tabledit.js"></script>
 <script src="js\addDel.js"></script>
 <script src="js\bootinvoice.js"></script>

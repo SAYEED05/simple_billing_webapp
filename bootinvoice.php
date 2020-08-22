@@ -12,6 +12,23 @@ $result = mysqli_query($mysqli, $sql);
     <div class="container">
         <div class="row clearfix">
             <div class="col-md-12">
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>CUSTOMER NAME</th>
+                            <th>CUSTOMER PHONE</th>
+                            <th>CUSTOMER EMAIL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input class="form-control" type="text" name="custname"></td>
+                            <td><input class="form-control" type="text" name="custph"></td>
+                            <td><input class="form-control" type="text" name="custemail"></td>
+                        </tr>
+                    </tbody>
+
+                </table>
                 <table class="table table-bordered table-hover" id="tab_logic">
                     <thead class="thead-dark">
                         <tr>
@@ -29,7 +46,7 @@ $result = mysqli_query($mysqli, $sql);
                             <td>
 
                                 <?php
-                                echo " <select id='prodname' class='chosen-select form-control form-control-sm' name='prod_name required'>
+                                echo " <select id='prodname' class='chosen-select form-control form-control-sm' name='prod_name[] required'>
                             <option value=''></option>";
                                 while ($row = mysqli_fetch_array($result)) {
                                     echo "<option  value=" . $row['prod_name'] . " data-value=" . $row['price'] . ">" . $row['prod_name'] . "</option>";
@@ -37,9 +54,9 @@ $result = mysqli_query($mysqli, $sql);
                                 echo "</select>";
                                 ?>
                             </td>
-                            <td><input type="number" name='qty' placeholder='Enter Qty' class="form-control qty" step="0" min="0" required /></td>
-                            <td><input type="number" name='price' placeholder='Enter Unit Price' value="" class="form-control price" step="0.00" min="0" id="price" required /></td>
-                            <td><input type="number" name='total' placeholder='0.00' class="form-control total" readonly /></td>
+                            <td><input type="number" name='qty[]' placeholder='Enter Qty' class="form-control qty" step="0" min="0" required /></td>
+                            <td><input type="number" name='price[]' placeholder='Unit Price' value="" class="form-control price" step="0.00" min="0" id="price" readonly required /></td>
+                            <td><input type="number" name='total[]' placeholder='0.00' class="form-control total" readonly /></td>
                         </tr>
                         <tr id='addr1'></tr>
                     </tbody>
