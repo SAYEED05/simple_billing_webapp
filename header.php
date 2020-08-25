@@ -35,7 +35,7 @@
                 <a class="nav-item nav-link" href="product.php">Add Products</a>
                 <a class="nav-item nav-link" href="billingpage.php">Billing</a>
                 <!-- <a class="nav-item nav-link" href="billheader.php">view customers</a> -->
-                <a class="nav-item nav-link" href="bootinvoice.php">Invoice</a>
+                <!--<a class="nav-item nav-link" href="bootinvoice.php">Invoice</a>-->
             </div>
         </div>
     </nav>
