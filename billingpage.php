@@ -25,9 +25,9 @@ $result = mysqli_query($mysqli, $sql);
             <tbody>
                 <tr>
                     <div class="form-group">
-                        <td><input class="form-control form-control-sm" name="custname" type="text"></td>
-                        <td><input class="form-control form-control-sm" name="phno" type="text"></td>
-                        <td><input class="form-control form-control-sm" name="emailid" type="text"></td>
+                        <td><input class="form-control form-control-sm" name="custname" type="text" required></td>
+                        <td><input class="form-control form-control-sm" name="phno" type="text" required></td>
+                        <td><input class="form-control form-control-sm" name="emailid" type="text" required></td>
                         <td><button type="submit" name="custsubmit" class="form-control btn btn-primary" id="addbtn">ADD CUSTOMER</button></td>
 
                     </div>
