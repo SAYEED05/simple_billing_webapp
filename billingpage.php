@@ -13,7 +13,7 @@ $result = mysqli_query($mysqli, $sql);
 </div>
 <form class="form-inline" id="forma" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
     <div class="table-responsive">
-        <table class="table table-bordered table-striped">
+        <table id="custform" class="table table-bordered table-striped">
             <thead class="thead-dark">
                 <tr>
                     <th>CUSTOMER NAME</th>
@@ -28,7 +28,7 @@ $result = mysqli_query($mysqli, $sql);
                         <td><input class="form-control form-control-sm" name="custname" type="text"></td>
                         <td><input class="form-control form-control-sm" name="phno" type="text"></td>
                         <td><input class="form-control form-control-sm" name="emailid" type="text"></td>
-                        <td><button type="submit" name="custsubmit" class="form-control btn btn-primary">ADD CUSTOMER</button></td>
+                        <td><button type="submit" name="custsubmit" class="form-control btn btn-primary" id="addbtn">ADD CUSTOMER</button></td>
 
                     </div>
                 </tr>
@@ -197,7 +197,8 @@ $result = mysqli_query($mysqli, $sql);
 
 <!-- BILL PRODUCT SECTION ENDS -->
 <div class="container">
-    <a class="btn btn-primary" href="generatepdf.php">Generate Bill</a>
+    <button class="btn btn-danger delall" id="delall" name="delall" value="delall">Clear Bill</button>
+    <a class="btn btn-primary" id="genbtn" href="generatepdf.php">Generate Bill</a>
 </div>
 
 <?php

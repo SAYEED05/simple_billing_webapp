@@ -1,3 +1,4 @@
+//PRODUCT EDIT AND DELETE
 $(document).ready(function () {
     $('#editable_table').Tabledit({
         url: 'product_edit_delete.php',
@@ -15,7 +16,7 @@ $(document).ready(function () {
 
 });
 
-
+//BILL EDIT AND DELETE
 $(document).ready(function () {
     $('#billtable').Tabledit({
         url: 'bill_edit_delete.php',
@@ -33,6 +34,8 @@ $(document).ready(function () {
 
 });
 
+
+//CUSTOMER INFO EDIT AND DELETE
 $(document).ready(function () {
     $('#custdet').Tabledit({
         url: 'customer_edit_delete.php',
@@ -48,4 +51,17 @@ $(document).ready(function () {
         }
     });
 
-});  
+});
+
+//BILL TABLE DELETE ALL
+$(document).ready(function () {
+    $('.delall').click(function () {
+        var clickbtnvalue = $(this).val();
+        var ajaxurl = 'bill_edit_delete.php',
+            data = { 'act': clickbtnvalue };
+        $.post(ajaxurl, data, function (response) {
+            //alert("Deleted All");
+            location.reload();
+        });
+    });
+});
